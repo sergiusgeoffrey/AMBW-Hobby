@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function show(classname) {
+            var x = document.getElementById(classname);
+            console.log(x);
+            var y = false;
+            if (x.style.display === "block") {
+                y = true;
+            }
+            document.getElementById("bagus").style.display = "none";
+            document.getElementById("febri").style.display = "none";
+            document.getElementById("gejo").style.display = "none";
+            if (y) {
+                x.style.display = "block";
+            }
+            if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+        }
+    </script>
 </head>
 <body>
     <h1 style="text-transform:uppercase;font-size:36pt;">Welcome to our Website</h1>
@@ -16,9 +37,251 @@
             <a href="hobbyC14190064.html">C14190064</a>
         </li>
     </ul>
-    <b>PORTOFOLIO</b>
-    <div class="porto bagus">
+    <ul class="navbar abc">
+        <li><b>PORTOFOLIO</b></li>
+        <li>
+            <p onclick="show('gejo')" style="cursor: pointer;">C14190024</p>
+        </li>
+        <li>
+            <p onclick="show('febri')" style="cursor: pointer;">C14190039</p>
+        </li>
+        <li>
+            <p onclick="show('bagus')" style="cursor: pointer;">C14190064</p>
+        </li>
+    </ul>
+    <div class="porto" id="bagus" style="display: none;">
+        <div class="portonaming">
+            <div>
+                <p class="p-name">Baskara Bagus</p>
+                <p class="p-desc">Web Designer, Programmer</p>
+            </div>
+            <div>
+                <p>E-MAIL</p>
+                <p style="font-weight: 300;">baskara93@gmail.com</p>
+            </div>
 
+        </div>
+        
+        <div class="section">
+            <div class="title-section" >Skills</div>
+            <div class="sectioning">
+                <div class="item">
+                    <p class="title">Web Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">UI Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">Game Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Technical</div>
+            <div class="sectioning">
+                <div class="item">
+                    <p>CSS</p>
+                    <p>HTML</p>
+                    <p>Javascript ES6</p>
+                </div>
+                <div class="item">
+                    <p>Jquery</p>
+                    <p>PHP</p>
+                    <p>Gatsby JS</p>
+                </div>
+                <div class="item">
+                    <p>Adobe Photoshop</p>
+                    <p>Adobe Illustrator</p>
+                    <p>C++</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Experience</div>
+            <div>
+                <div class="item">
+                    <p class="title">Openhouse 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">Petra Civil Expo 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">IRGL 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Education</div>
+            <div>
+                <div class="item">
+                    <p class="title">Petra Christian University</p>
+                    <p>Informatics (2019-2023)</p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <div class="porto" id="febri" style="display: none;">
+        <div class="portonaming">
+            <div>
+                <p class="p-name">Febri</p>
+                <p class="p-desc">Web Designer, Programmer</p>
+            </div>
+            <div>
+                <p>E-MAIL</p>
+                <p style="font-weight: 300;">baskara93@gmail.com</p>
+            </div>
+
+        </div>
+        
+        <div class="section">
+            <div class="title-section" >Skills</div>
+            <div class="sectioning">
+                <div class="item">
+                    <p class="title">Web Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">UI Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">Game Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Technical</div>
+            <div class="sectioning">
+                <div class="item">
+                    <p>CSS</p>
+                    <p>HTML</p>
+                    <p>Javascript ES6</p>
+                </div>
+                <div class="item">
+                    <p>Jquery</p>
+                    <p>PHP</p>
+                    <p>Gatsby JS</p>
+                </div>
+                <div class="item">
+                    <p>Adobe Photoshop</p>
+                    <p>Adobe Illustrator</p>
+                    <p>C++</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Experience</div>
+            <div>
+                <div class="item">
+                    <p class="title">Openhouse 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">Petra Civil Expo 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">IRGL 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Education</div>
+            <div>
+                <div class="item">
+                    <p class="title">Petra Christian University</p>
+                    <p>Informatics (2019-2023)</p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <div class="porto" id="gejo" style="display: none;">
+        <div class="portonaming">
+            <div>
+                <p class="p-name">Sergius Geofrey</p>
+                <p class="p-desc">Web Designer, Programmer</p>
+            </div>
+            <div>
+                <p>E-MAIL</p>
+                <p style="font-weight: 300;">baskara93@gmail.com</p>
+            </div>
+
+        </div>
+        
+        <div class="section">
+            <div class="title-section" >Skills</div>
+            <div class="sectioning">
+                <div class="item">
+                    <p class="title">Web Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">UI Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">Game Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Technical</div>
+            <div class="sectioning">
+                <div class="item">
+                    <p>CSS</p>
+                    <p>HTML</p>
+                    <p>Javascript ES6</p>
+                </div>
+                <div class="item">
+                    <p>Jquery</p>
+                    <p>PHP</p>
+                    <p>Gatsby JS</p>
+                </div>
+                <div class="item">
+                    <p>Adobe Photoshop</p>
+                    <p>Adobe Illustrator</p>
+                    <p>C++</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Experience</div>
+            <div>
+                <div class="item">
+                    <p class="title">Openhouse 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">Petra Civil Expo 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+                <div class="item">
+                    <p class="title">IRGL 2021</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex quis metus lacinia finibus. Duis et eleifend leo. Cras auctor accumsan rutrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section" >Education</div>
+            <div>
+                <div class="item">
+                    <p class="title">Petra Christian University</p>
+                    <p>Informatics (2019-2023)</p>
+                </div>
+            </div>
+        </div>
+        <div></div>
     </div>
     <div class="credits">
         <h3>Created by:</h3>
